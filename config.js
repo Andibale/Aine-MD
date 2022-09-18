@@ -2,8 +2,8 @@ let fs = require('fs')
 let chalk = require('chalk')
 
 global.owner = [
-  ['6283132921627'],
-  ['6282258255356'],
+  ['6285255709976'],
+  ['6285255709976'],
   ['6283132921627', 'Owner', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
@@ -40,8 +40,8 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
-  var sticker_name = '@Ditz_bot'
-  var sticker_author = 'Aditya'
+  var sticker_name = '@AXD_bot'
+  var sticker_author = 'AineMD'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
@@ -58,7 +58,7 @@ fs.watchFile(file_exif, () => {
 // Sticker WM
 global.packname = sticker_name
 global.author = sticker_author
-global.wm = '© Ditz'
+global.wm = '© Ain'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
